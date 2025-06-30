@@ -1,0 +1,72 @@
+/* Reset-ish */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  background: url(background.png) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Main Content */
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.content-box {
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.content-box p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Buttons */
+a.button {
+  display: block;
+  padding: 12px;
+  margin: 10px auto;
+  background-color: #444;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+a.button:hover {
+  background-color: #222;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  color: #555;
+}
